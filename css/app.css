@@ -172,9 +172,9 @@ textarea:focus:-ms-input-placeholder {
 body {
   line-height: 1.4;
   transition: 0s;
-  color: #a8756f;
-  font-size: 16px;
-  font-family: "Lora", serif;
+  color: #191920;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .d-flex {
@@ -186,10 +186,10 @@ body {
 }
 
 a {
-  color: #a8756f;
+  color: #362601;
 }
 a:hover {
-  color: #a8756f;
+  color: #191920;
   text-decoration: underline;
 }
 
@@ -200,12 +200,12 @@ section {
 
 h1 {
   letter-spacing: 7px;
-  font-family: "Lobster", cursive;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 800;
-  color: #fff;
+  color: #e4e4e5;
   margin-bottom: 40px;
 }
 h1 span {
@@ -213,13 +213,13 @@ h1 span {
 }
 
 h2 {
-  letter-spacing: 7px;
-  font-family: "Lobster", cursive;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 800;
-  color: #000;
+  color: #e4e4e5;
   margin-bottom: 40px;
 }
 h2 span {
@@ -227,13 +227,13 @@ h2 span {
 }
 
 h3 {
-  letter-spacing: 7px;
-  font-family: "Lobster", cursive;
+  letter-spacing: 4px;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 800;
-  color: #000;
+  color: #362601;
   margin-bottom: 20px;
 }
 h3 span {
@@ -241,12 +241,13 @@ h3 span {
 }
 
 h4 {
-  letter-spacing: 7px;
-  font-family: "Lobster", cursive;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 800;
+  color: #362601;
 }
 h4 span {
   color: #ec495e;
@@ -258,11 +259,12 @@ h4 span {
   background-color: #ec495e;
   border-radius: 50px;
   padding: 5px 20px;
-  color: #fff;
+  color: #ffffff;
+  font-size: 18px;
 }
 .btn:hover {
   color: #fff;
-  box-shadow: 5px 5px 32px -12px rgba(37, 35, 50, 0.75);
+  background-color: #bd3b4c;
 }
 
 .btn-large {
@@ -271,13 +273,13 @@ h4 span {
 }
 
 .subtitle {
-  margin-bottom: 20px;
-  color: #fff;
+  margin-bottom: 60px;
+  color: #e4e4e5;
 }
 
 .title {
-  color: #613c41;
-  font-size: 16px !important;
+  color: #191920;
+  font-size: 18px !important;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -287,12 +289,6 @@ h4 span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.heading img {
-  display: block;
-  width: 100px;
-  object-fit: contain;
-  margin-bottom: 30px;
 }
 
 .map {
@@ -312,8 +308,8 @@ h4 span {
 .next {
   padding: 0;
   border: none;
-  width: 30px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   top: 50%;
   margin-top: -20px;
@@ -335,6 +331,26 @@ h4 span {
   right: 15px;
 }
 
+.nav-tabs {
+  border-bottom: 1px solid #191920;
+}
+
+.nav-tabs .nav-link {
+  color: #191920;
+  background-color: #e4e4e5;
+  border-color: #191920;
+}
+.nav-tabs .nav-link.active {
+  background-color: #e4e4e5;
+  border-color: #191920 #191920 #e4e4e5;
+  pointer-events: none;
+}
+.nav-tabs .nav-link:hover {
+  color: #191920;
+  background-color: #e4e4e5;
+  border-color: #191920;
+}
+
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -346,7 +362,7 @@ h4 span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 3px solid #ec495e;
+  border: 3px solid #191920;
 }
 .slick-dots li button {
   width: 1px;
@@ -355,19 +371,19 @@ h4 span {
   opacity: 0;
 }
 .slick-dots .slick-active {
-  background: #ec495e;
+  background: #191920;
 }
 
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   position: absolute;
   left: 50%;
   margin-left: -50px;
   z-index: 1;
   bottom: -30px;
-  padding: 16px;
-  background: #f5d7d7;
+  padding: 20px;
+  background: #e4e4e5;
   border-radius: 50%;
 }
 .logo img {
@@ -382,7 +398,7 @@ h4 span {
 }
 
 header {
-  background: #f5d7d7;
+  background: #e4e4e5;
   position: relative;
 }
 header .wrap .tel {
@@ -398,7 +414,7 @@ header .main-nav {
   display: flex;
 }
 header .main-nav li {
-  font-size: 14px;
+  font-size: 18px;
   margin-right: 14px;
 }
 header .main-nav li a {
@@ -406,7 +422,7 @@ header .main-nav li a {
   width: 100%;
   height: 100%;
   display: block;
-  color: #a8756f;
+  color: #362601;
   text-decoration: none;
   position: relative;
 }
@@ -417,7 +433,7 @@ header .main-nav li a:after {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #ec495e;
+  background: #191920;
   transition: all 0.3s;
 }
 header .main-nav li a:hover:after {
@@ -427,8 +443,8 @@ header .main-nav li:last-child {
   margin-right: 0;
 }
 header .tel {
-  font-size: 14px;
-  color: #a8756f;
+  font-size: 18px;
+  color: #362601;
   position: relative;
   padding: 5px;
   text-decoration: none;
@@ -440,7 +456,7 @@ header .tel:after {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #ec495e;
+  background: #191920;
   transition: all 0.3s;
 }
 header .tel:hover:after {
@@ -458,23 +474,35 @@ header .container {
 
 .main-screen {
   padding: 0 !important;
-  background: url("../img/cake-10.jpg") center center no-repeat;
+  background: #4d443e;
+  background: radial-gradient(circle, #4d443e 0%, black 100%, black 100%);
   -webkit-background-size: cover;
   background-size: cover;
-  background-position-y: -150px;
 }
 .main-screen .container {
-  min-height: 760px;
+  min-height: 660px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.main-screen .cake_main {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 550px;
 }
 .main-screen .main-info {
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+}
+.main-screen .main-info h1 {
+  text-align: left;
 }
 
+.custom-cakes {
+  background: #e4e4e5;
+}
 .custom-cakes .nav {
   justify-content: center;
 }
@@ -486,6 +514,10 @@ header .container {
   padding: 30px 0 0;
 }
 .custom-cakes__items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100% - 30px);
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
@@ -504,11 +536,21 @@ header .container {
 }
 .custom-cakes__items .item p {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
+}
+.custom-cakes__items .item .title {
+  color: #ec495e;
+}
+.custom-cakes__items .item .price {
+  color: #ec495e;
+}
+.custom-cakes__items .item .btn {
+  margin: auto 0 0 0;
 }
 
 .special-offer {
-  background: #fff9ef;
+  background: #4d443e;
+  background: radial-gradient(circle, #4d443e 0%, black 100%, black 100%);
   padding-bottom: 170px;
 }
 .special-offer .large-blocks {
@@ -553,6 +595,14 @@ header .container {
   margin: 0 auto;
 }
 
+.reviews {
+  background: #e4e4e5;
+}
+.reviews__items {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+}
 .reviews__items .slick-list {
   padding: 0 100px;
 }
@@ -572,7 +622,8 @@ header .container {
 }
 
 .contacts {
-  background: #fff9ef;
+  background: #4d443e;
+  background: radial-gradient(circle, #4d443e 0%, black 100%, black 100%);
 }
 .contacts .row {
   background: #fff;
@@ -601,7 +652,7 @@ header .container {
 
 footer {
   text-align: center;
-  background: #f5d7d7;
+  background: #e4e4e5;
   padding: 50px 0 20px;
 }
 footer .container {

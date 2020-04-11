@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="libs/font-awesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
@@ -15,7 +14,7 @@
 </head>
 <body>
 <!-- START HEADER -->
-<header>
+<header id="header">
     <div class="container">
         <div class="wrap">
             <ul class="main-nav" id="main-nav">
@@ -26,7 +25,7 @@
             </ul>
             <a href="tel:7258469415" class="tel"><i class="fas fa-phone"></i>+372-5846-9415</a>
         </div>
-        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <a href="#header" class="logo"><img src="img/logo.png" alt=""></a>
         <a href="tel:7258469415" class="tel"><i class="fas fa-phone"></i>+372-5846-9415</a>
         <a href="#" class="menu_link">
             <div class="hamburger" id="hamburger-1">
@@ -44,6 +43,7 @@
 
     <section class="main-screen">
         <div class="container d-flex">
+            <img class="cake_main" src="img/cake_main_screen.png" alt="cake">
             <div class="main-info">
                 <h1>Для тех <span>кто любит удивлять</span></h1>
                 <p class="subtitle">
@@ -57,8 +57,7 @@
     <section class="custom-cakes" id="main-custom-cakes">
         <div class="container">
             <div class="heading">
-                <img src="" alt="">
-                <h2>Торты <span>на заказ</span></h2>
+                <h3>Торты <span>на заказ</span></h3>
             </div>
             <div class="tabs">
                 <nav>
@@ -74,16 +73,17 @@
                                 <div class="item">
                                     <img src="img/cake-1.jpg" alt="">
                                     <p class="title">Наполеон</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
-                                    <p class="price">40$</p>
+                                    <p>Нежнейшие коржи, заварной крем...Украшен малинкой..</p>
+                                    <p class="price">20$</p>
                                     <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
-                                    <img src="img/cake-2.jpg" alt="">
-                                    <p class="title">Наполеон</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
+                                    <img src="img/cake-15.jpg" alt="">
+                                    <p class="title">Тортик Passion</p>
+                                    <p>Вкуснейший миндальный бисквит, хрустящий слой, абрикосовое компоте с кусочками кураги,взбитая карамель и мусс с
+                                        маракуя и карамелизированным шоколадом</p>
                                     <p class="price">40$</p>
                                     <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
                                 </div>
@@ -91,17 +91,21 @@
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
                                     <img src="img/cake-3.jpg" alt="">
-                                    <p class="title">Наполеон</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
+                                    <p class="title">Фисташковый тарт</p>
+                                    <p>Песочное тесто, фисташковый крем и малиновое конфи</p>
                                     <p class="price">40$</p>
+
                                     <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
                                     <img src="img/cake-4.jpg" alt="">
-                                    <p class="title">Наполеон</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
+                                    <p class="title">Торт Сказка</p>
+                                    <p>Как только вы попробуете этот вкуснейший торт "Сказка", то сразу же в него влюбитесь. Равнодушных к этому торту
+                                        не найдется.
+                                        В этом бисквитном торте отлично сочетаются ароматные сметанные бисквиты и нежный сливочный крем. Торт украшен
+                                        белковым заварным кремом, шоколадной глазурью с подтеками.</p>
                                     <p class="price">40$</p>
                                     <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
                                 </div>
@@ -109,17 +113,49 @@
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
                                     <img src="img/cake-5.jpg" alt="">
-                                    <p class="title">Наполеон</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
+                                    <p class="title">Тортик для Олеси</p>
+                                    <p>В этом тортике сочетаются два тортика.. В одном шоколадные коржи, сливочный крем и коктейльная вишенка..Верхний
+                                        ярус белые бархатные бисквитные коржи с кремом на основе маскарпоне и прослоен лимонным курдом..</p>
                                     <p class="price">40$</p>
                                     <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
-                                    <img src="img/cake-6.jpg" alt="">
-                                    <p class="title">Наполеон</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
+                                    <img src="img/cake-7.jpg" alt="">
+                                    <p class="title">Тортик к Новому году</p>
+                                    <p>Медовый сливочный бисквит.Крем сливки , вареная сгущенка с добавлением кусочки чернослива.Украшен белково
+                                        заврным кремом.</p>
+                                    <p class="price">40$</p>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="item">
+                                    <img src="img/cake-16.jpg" alt="">
+                                    <p class="title">Торт Моккачино</p>
+                                    <p>Бисквит грецкий орех,карамель с саблировагнными грецкими орехами,кофеное креме,мусс кофе, бейли и украшен
+                                        кофеной глазурью.,</p>
+                                    <p class="price">40$</p>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="item">
+                                    <img src="img/cake-13.jpg" alt="">
+                                    <p class="title">Торт Моккачино</p>
+                                    <p>Бисквит грецкий орех,карамель с саблировагнными грецкими орехами,кофеное креме,мусс кофе, бейли и украшен
+                                        кофеной глазурью.,</p>
+                                    <p class="price">40$</p>
+                                    <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="item">
+                                    <img src="img/cake-14.jpg" alt="">
+                                    <p class="title">Торт Моккачино</p>
+                                    <p>Бисквит грецкий орех,карамель с саблировагнными грецкими орехами,кофеное креме,мусс кофе, бейли и украшен
+                                        кофеной глазурью.,</p>
                                     <p class="price">40$</p>
                                     <a href="#" class="btn" data-toggle="modal" data-target="#form_modal">Заказать</a>
                                 </div>
@@ -130,7 +166,7 @@
                         <div class="row custom-cakes__items">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
-                                    <img src="img/cake-1.jpg" alt="">
+                                    <img src="img/mini-cake-1.jpg" alt="">
                                     <p class="title">Наполеон</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
                                     <p class="price">40$</p>
@@ -139,7 +175,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
-                                    <img src="img/cake-2.jpg" alt="">
+                                    <img src="img/mini-cake-2.jpg" alt="">
                                     <p class="title">Наполеон</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
                                     <p class="price">40$</p>
@@ -148,7 +184,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
-                                    <img src="img/cake-3.jpg" alt="">
+                                    <img src="img/mini-cake-3.jpg" alt="">
                                     <p class="title">Наполеон</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
                                     <p class="price">40$</p>
@@ -157,7 +193,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
-                                    <img src="img/cake-4.jpg" alt="">
+                                    <img src="img/mini-cake-4.jpg" alt="">
                                     <p class="title">Наполеон</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
                                     <p class="price">40$</p>
@@ -166,7 +202,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
-                                    <img src="img/cake-5.jpg" alt="">
+                                    <img src="img/mini-cake-5.jpg" alt="">
                                     <p class="title">Наполеон</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
                                     <p class="price">40$</p>
@@ -175,7 +211,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item">
-                                    <img src="img/cake-6.jpg" alt="">
+                                    <img src="img/mini-cake-6.jpg" alt="">
                                     <p class="title">Наполеон</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, provident.</p>
                                     <p class="price">40$</p>
@@ -192,7 +228,6 @@
     <section class="special-offer" id="special-offer">
         <div class="container">
             <div class="heading">
-                <img src="" alt="">
                 <h2>Специальное <span>предложение</span></h2>
             </div>
             <div class="large-blocks d-flex">
@@ -202,7 +237,8 @@
                 <div class="info">
                     <h3>Предложение <span>месяца</span></h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate dolor esse ex minus natus neque perferendis porro quod voluptatem.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate dolor esse ex minus natus neque perferendis porro
+                        quod voluptatem.
                     </p>
                     <a href="#" class="btn btn-large" data-toggle="modal" data-target="#form_modal">Заказ</a>
                 </div>
@@ -213,8 +249,7 @@
     <section class="reviews" id="reviews">
         <div class="container">
             <div class="heading">
-                <img src="" alt="">
-                <h2>Отзывы <span>клиентов</span></h2>
+                <h3>Отзывы <span>клиентов</span></h3>
             </div>
             <div class="reviews__items">
                 <div class="item">
@@ -222,7 +257,7 @@
                         <img src="img/clients/client-1.jpg" alt="">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, commodi.
+                        Cпасибо, дорогая! Очень вкусно)))
                     </p>
                 </div>
                 <div class="item">
@@ -230,23 +265,23 @@
                         <img src="img/clients/client-2.jpg" alt="">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, commodi.
+                        Это был безумно вкусный торт! Алёна у тебя золотые ручки!))
                     </p>
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="img/clients/client-1.jpg" alt="">
+                        <img src="img/clients/client-3.jpg" alt="">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, commodi.
+                        Какая умничка !!! Браво.
                     </p>
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img src="img/clients/client-2.jpg" alt="">
+                        <img src="img/clients/client-4.jpg" alt="">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, commodi.
+                        Волшебный тортик. Рукодельница,Аленка!
                     </p>
                 </div>
             </div>
@@ -256,7 +291,6 @@
     <section class="contacts" id="contacts">
         <div class="container">
             <div class="heading">
-                <img src="" alt="">
                 <h2>Забрать торт <span>по адресу</span></h2>
             </div>
             <div class="row">
@@ -283,7 +317,7 @@
 <!-- START FOOTER -->
 <footer>
     <div class="container d-flex">
-        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <a href="#header" class="logo"><img src="img/logo.png" alt=""></a>
         <ul class="footer-nav" id="footer-nav">
             <li><a href="#main-custom-cakes">Каталог</a></li>
             <li><a href="#special-offer">Предложение</a></li>
