@@ -823,10 +823,25 @@ textarea {
   height: 200px;
 }
 
+.cake-accordions {
+  display: none;
+}
+
+.accordion .card .card-header {
+  background-color: #ec495e;
+
+  .btn {
+    background-color: #ec495e !important;
+    text-decoration: none;
+  }
+}
 
 @media (max-width: 1400px) {
   .main-screen .container {
     min-height: 600px;
+  }
+  .main-screen .cake_main {
+    width: 500px;
   }
 }
 
@@ -835,11 +850,34 @@ textarea {
     margin-left: 0;
     margin-right: 0;
   }
+  .main-screen .main-info {
+    max-width: 500px;
+  }
+  .main-screen .container {
+    min-height: 550px;
+  }
+  .main-screen .cake_main {
+    width: 460px;
+  }
 }
 
 @media (max-width: 991px) {
   .main-screen .container {
     min-height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-screen .cake_main {
+    order: 1;
+    position: relative;
+    bottom: -50px;
+  }
+  .main-screen .main-info {
+    max-width: unset;
+    text-align: center;
+  }
+  .main-screen .main-info h1 {
+    text-align: center;
   }
   .main-screen {
     padding: 50px 0 !important;
@@ -886,7 +924,15 @@ textarea {
 }
 
 @media (max-width: 767px) {
-
+  .cake-accordions {
+    display: block;
+  }
+  .cake-tabs {
+    display: none;
+  }
+  .main-screen .cake_main {
+    width: 350px;
+  }
   .tel {
     display: none;
   }
@@ -914,7 +960,7 @@ textarea {
     left: 0;
     top: 85px;
     width: 100%;
-    background-color: #f5d7d7;
+    background-color: #e4e4e5;
     z-index: 99;
   }
   .logo {
@@ -972,9 +1018,17 @@ textarea {
   .special-offer .large-blocks .img {
     max-height: 300px;
   }
+
+
 }
 
 @media (max-width: 575px) {
+  .subtitle {
+    margin-bottom: 30px;
+  }
+  .main-screen .cake_main {
+    width: 220px;
+  }
   .special-offer .large-blocks .info {
     padding: 30px;
   }
